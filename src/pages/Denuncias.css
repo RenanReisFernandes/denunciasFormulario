@@ -1,0 +1,68 @@
+.main_denuncias{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #262626;
+    padding: 30px;
+}
+
+.card_desc{
+    height: 30vh;
+    width: 20%;
+    background-color: #bf8069;
+    border-radius: 15px;
+    margin: 100px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card_desc h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: max(17px, 2vw);
+    text-align: center;
+
+}
+
+@media(max-width:470px){
+    .card_desc h2{
+        font-size: 10px;
+    }
+}
+
+@media(max-width:315px){
+    .card_desc h2{
+        font-size: 7px;
+    }
+}
+
+.card_denuncias{
+    background-color: #bf8069;
+    height: 80vh;
+    width: 70%;
+    border-radius: 10px;
+    margin: 15px 0px 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #fbf2c0 ;
+}
+
+.card_denuncias h3{
+    padding: 5px;
+}
+
+
+.card_denuncias_denuncia{
+    height: 70vh;
+    width: 85%;
+    margin: 0px 20px 30px 20px;
+    background-color: #fbf2c0;
+}
