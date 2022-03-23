@@ -1,36 +1,36 @@
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
-import Navbar from './components/NavBar/Navbar'
+import Navbar from './components/NavBar/Navbar';
+import Footer from './components/Footer';
 
-import SeusDireitos from './pages/SeusDireitos/SeusDireitos'
-import Homepage from './pages/homepage/Homepage'
+import SeusDireitos from './pages/SeusDireitos/SeusDireitos';
 import SobreNos from './pages/SobreNos/SobreNos'
-import Footer from './components/Footer'
-import Age from './pages/api/Age'
+import Homepage from './pages/homepage/Homepage';
 import AgeEdit from "./pages/api/ageGroup/Edit/AgeEdit";
 import AgePost from "./pages/api/ageGroup/Post/AgePost";
 
-const App =() =>{
-  return(
-    
-    <div className="App">
+import Age from './pages/api/ageGroup/Age'
 
-   
+
+function App() {
+  return (
+
+    <>
       <Router>
-      <Navbar />
-          <Routes>
-            <Route path="/" element={<Homepage/>} />
-            <Route path="/sobre" element={<SobreNos/>} />
-            <Route path="/direitos" element={<SeusDireitos/>} />
-            <Route path='/api/age' element={<Age />} />
-				<Route path='/api/age/post' element={<AgePost />} />
-				<Route path='/api/age/edit/:id' element={<AgeEdit />} />
-                       
-          </Routes>
-      </Router>
-   <Footer />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/sobre" element={<SobreNos />} />
+          <Route path="/direitos" element={<SeusDireitos />} />
+          <Route path='/api/age' element={<Age />} />
+          <Route path='/api/age/post' element={<AgePost />} />
+          <Route path='/api/age/edit/:id' element={<AgeEdit />} />
 
-    </div>
+        </Routes>
+      </Router>
+      <Footer />
+
+    </>
 
   );
 }

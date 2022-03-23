@@ -1,7 +1,7 @@
 import styles from './Age.module.css';
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import Api from '../../services/Api';
+import Api from '../../../pages/../services/Api'
 
 export default function Age() {
 	const [age, setAge] = useState([]);

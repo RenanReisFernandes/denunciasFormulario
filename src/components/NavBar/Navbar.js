@@ -3,6 +3,8 @@ import './Navbar.css';
 import $ from 'jquery';
 import React, { useEffect } from 'react';
 
+import logoHeader from '../../assets/logoSuaVozHeader.png';
+
 
 const Navbar = () => {
 
@@ -53,7 +55,7 @@ const Navbar = () => {
         <li className="nav-item active">
           <Link className="navbar-brand navbar-logo" to='/'>
   
-            <img src="#"></img>
+          <img src={logoHeader} alt='logo sua voz pessoa  com altafalante' />
   
           </Link>
         </li>
@@ -88,56 +90,36 @@ const Navbar = () => {
               </Link>
             </li>
   
-            <li className="nav-item">
-              <Link className="nav-link" to="/Formulario">
-  
-                <i
-                  className=" fa-solid fa-handshake"> 
-                </i>Sobre nós
-              </Link>
-            </li>
-  
-  
-            <li className="nav-item">
-              <Link className="nav-link" to="/SeusDireitos">
-  
-                <i
-                  className="fas fa-hands-helping  ">
-                </i>Seus direitos
-              </Link>
-            </li>
-  
-  
-            <li className="nav-item">
-              <Link className="nav-link" to="Entrar">
-  
-                <i
-                  className="fa-solid fa-circle-arrow-right">  
-                </i>Entrar
-              </Link>
-            </li>
-  
-  
-            <li className="nav-item">
-              <Link className="nav-link" to="Cadastrar">
-  
-                <i
-                  className="fas fa-sign-in-alt">
-                </i>Criar conta
-              </Link>
-            </li>
-  
-  
-            <li className="nav-item">
-              <Link className="nav-link" to="Denuncias">
-  
-                <i
-                  className="fas fa-edit">
-                </i>Denuncias
-              </Link>
-            </li>
-  
-            
+            <li className='nav-item'>
+						<Link className='nav-link' to='/sobre'>
+							<i className=' fa-solid fa-handshake'></i>Sobre nós
+						</Link>
+					</li>
+
+					<li className='nav-item'>
+						<Link className='nav-link' to='/direitos'>
+							<i className='fas fa-hands-helping  '></i>Seus direitos
+						</Link>
+					</li>
+
+					<li className='nav-item'>
+						<Link className='nav-link' to='Entrar'>
+							<i className='fa-solid fa-circle-arrow-right'></i>Entrar
+						</Link>
+					</li>
+
+					<li className='nav-item'>
+						<Link className='nav-link' to='Cadastrar'>
+							<i className='fas fa-sign-in-alt'></i>Criar conta
+						</Link>
+					</li>
+
+					<li className='nav-item'>
+						<Link className='nav-link' to='Denuncias'>
+							<i className='fas fa-edit'></i>Denuncias
+						</Link>
+					</li>
+             
           </ul>
         </div>
       </nav>
